@@ -4,8 +4,6 @@ import caldav
 import json
 import sys
 import datetime
-from requests.auth import HTTPBasicAuth
-import logging
 
 davurl = "https://<user>:<password>@<davserver>/caldav/"
 
