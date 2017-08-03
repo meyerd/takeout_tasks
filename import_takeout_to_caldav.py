@@ -14,6 +14,7 @@ client = caldav.DAVClient(davurl)
 gcal_timeparse_string = '%Y-%m-%dT%H:%M:%S.%fZ'
 vcal_timeformat_string = '%Y%m%dT%H%M%SZ'
 
+
 def main(inputfile):
     with open(inputfile, 'r') as f:
         tasks = json.load(f)
@@ -65,7 +66,6 @@ def main(inputfile):
                 todo_str += "END:VTODO\nEND:VCALENDAR"
 
                 calendar.add_todo(todo_str)
-
 
 
 if __name__ == '__main__':
